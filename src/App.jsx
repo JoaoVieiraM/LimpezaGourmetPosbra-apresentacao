@@ -9,6 +9,7 @@ import img2 from './assets/img2.jpeg';
 import img3 from './assets/img3.jpeg';
 import img4 from './assets/img4.jpeg';
 import img5 from './assets/img5.jpeg';
+import img6 from './assets/img6.png';
 
 function App() {
   const { scrollYProgress } = useScroll();
@@ -39,8 +40,8 @@ function App() {
 
         <ul className={`nav-links ${isMobileMenuOpen ? 'active' : ''}`}>
           <li onClick={() => scrollToSection('home')}>Home</li>
-          <li onClick={() => scrollToSection('sobre')}>Sobre a Excelência</li>
-          <li onClick={() => scrollToSection('solucoes')}>Soluções</li>
+          <li onClick={() => scrollToSection('sobre')}>História e Compromisso</li>
+          <li onClick={() => scrollToSection('solucoes')}>Diferenciais</li>
           <li onClick={() => scrollToSection('contato')}>Contato</li>
           <li className="mobile-cta">
              <button className="gold-btn btn-small" onClick={() => window.open('https://wa.me/5511917477832?text=Ol%C3%A1%2C%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%20Premium!', '_blank')}>Orçamento</button>
@@ -67,7 +68,7 @@ function App() {
             className="hero-subtitle"
           >
             A parceria essencial para arquitetura e engenharia.<br/>
-            Redefinindo a pureza no pós-obra.
+            Elevando o padrão da entrega final de sua obra.
           </motion.p>
           
           <motion.div 
@@ -77,12 +78,12 @@ function App() {
             className="hero-stats"
           >
             <div className="stat">
-              <span className="stat-num serif">+100h</span>
-              <span className="stat-label">Treinamento<br/>Especializado</span>
+              <span className="stat-num serif">+1000</span>
+              <span className="stat-label">Obras<br/>Entregues</span>
             </div>
             <div className="stat">
               <span className="stat-num serif">100%</span>
-              <span className="stat-label">Garantia de<br/>Satisfação</span>
+              <span className="stat-label">Garantia de<br/>Qualidade</span>
             </div>
             <button className="circle-btn" onClick={() => scrollToSection('sobre')} aria-label="Ir para Sobre">
               <ArrowUpRight size={28} />
@@ -96,7 +97,7 @@ function App() {
             transition={{ duration: 1.2, ease: "easeInOut" }}
             className="hero-image-wrapper"
         >
-           <img src={img3} alt="Limpeza Fina" className="hero-image" />
+           <img src={img6} alt="Limpeza Fina" className="hero-image" />
            <div className="badge"><Sparkles size={20}/> Limpeza Fina</div>
         </motion.div>
       </section>
@@ -105,7 +106,7 @@ function App() {
       <section className="marquee-wrapper">
         <div className="marquee">
           <div className="marquee-content">
-            Metodologia Bermuda & UK • Química Avançada • Staff Certificado • Acabamento Fino • Metodologia Bermuda & UK • Química Avançada • Staff Certificado • Acabamento Fino •
+            Parceiros de Confiança: Planta.Inc • Gpe • Diálogo • Vivaz • Caixa Econômica Federal • Parceiros de Confiança: Planta.Inc • Gpe • Diálogo • Vivaz • Caixa Econômica Federal • 
           </div>
         </div>
       </section>
@@ -130,17 +131,14 @@ function App() {
             transition={{ duration: 1 }}
             className="about-text"
           >
-            <h2 className="serif">Elevando o Padrão da Entrega Final</h2>
+            <h2 className="serif">Nossa História e Compromisso</h2>
             <p>
-              Compreendemos que a conclusão de um projeto arquitetônico ou de engenharia de alto padrão 
-              exige um acabamento impecável. Nossa expertise vai além da limpeza convencional, posicionando-nos 
-              como seu parceiro estratégico para garantir que cada detalhe de sua obra seja entregue com a 
-              perfeição que seus clientes e seu renome exigem.
+              A Limpeza Gourmet foi concebida a partir da observação de que o mercado brasileiro carecia de um serviço de limpeza pós-obra que atendesse aos mais rigorosos padrões internacionais. Inspirados pelas metodologias de excelência de Bermuda e do Reino Unido, preservamos e valorizamos cada projeto, garantindo a conformidade e a qualidade técnica da obra do início ao fim.
             </p>
             <ul className="benefits-list">
-              <li><CheckCircle2 color="var(--color-gold)"/> Remoção minuciosa de resíduos técnica internacional</li>
-              <li><CheckCircle2 color="var(--color-gold)"/> Produtos biodegradáveis de padrão europeu</li>
-              <li><CheckCircle2 color="var(--color-gold)"/> Proteção em mármores, metais e estofados</li>
+              <li><CheckCircle2 color="var(--color-gold)"/> Flexibilidade e adaptação para surpresas na obra</li>
+              <li><CheckCircle2 color="var(--color-gold)"/> Rapidez e eficiência em prazos curtos</li>
+              <li><CheckCircle2 color="var(--color-gold)"/> Integração perfeita aos seus cronogramas corporativos</li>
             </ul>
           </motion.div>
         </div>
@@ -153,7 +151,7 @@ function App() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             className="services-title serif"
-        >soluções.</motion.h2>
+        >diferenciais.</motion.h2>
         <div className="services-grid">
            <motion.div 
             initial={{ opacity: 0, scale: 0.95 }}
@@ -164,8 +162,8 @@ function App() {
             style={{ backgroundImage: `url(${img2})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
            >
              <div className="service-card-content">
-               <h3>Pós-Obra Premium</h3>
-               <p>Remoção de resíduos e proteção essencial para empreendimentos de alto padrão após o término da obra.</p>
+               <h3>Técnica Internacional</h3>
+               <p>Padrões de excelência Bermuda & UK com química avançada e biodegradável para redefinir a pureza da entrega.</p>
              </div>
            </motion.div>
            <motion.div 
@@ -177,8 +175,8 @@ function App() {
             style={{ backgroundImage: `url(${img4})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
            >
              <div className="service-card-content">
-               <h3>Facilities Executive</h3>
-               <p>Gestão de nível executivo para residências e escritórios corporativos premium.</p>
+               <h3>Staff Certificado</h3>
+               <p>Equipe com mais de 100h de treinamento e múltiplas certificações (ABRALIMP, Spartan) para ambientes de alto padrão.</p>
              </div>
            </motion.div>
            <motion.div 
@@ -190,8 +188,8 @@ function App() {
              style={{ backgroundImage: `url(${img5})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
            >
              <div className="service-card-content">
-               <h3>Revitalização Nobre</h3>
-               <p>Restauro especializado para mármores, metais, lustres e estofados valiosos.</p>
+               <h3>Acabamento Fino</h3>
+               <p>Cuidado meticuloso com materiais nobres como mármores, metais e estofados, garantindo a proteção da obra.</p>
              </div>
            </motion.div>
         </div>
@@ -201,15 +199,15 @@ function App() {
       <footer id="contato" className="footer">
         <div className="footer-content">
            <div className="footer-cta">
-             <h2 className="serif">Auditoria Pós-Limpeza.</h2>
-             <p>Qualidade comprovada no detalhe.</p>
+             <h2 className="serif">Parcerias de Sucesso.</h2>
+             <p>A extensão da sua busca pela perfeição.</p>
            </div>
            <a href="https://wa.me/5511917477832?text=Ol%C3%A1%2C%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%20Premium!" target="_blank" rel="noreferrer">
              <button className="gold-btn">Solicitação de Orçamento</button>
            </a>
         </div>
         <div className="footer-bottom">
-           <span>© 2026 Limpeza Gourmet | Premium Excellence</span>
+           <span>© 2026 Limpeza Gourmet | Technical Excellence</span>
            <div className="footer-links">
              <a href="https://wa.me/5511917477832?text=Ol%C3%A1%2C%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%20Premium!" target="_blank" rel="noreferrer">Orçamento</a>
              <a href="https://www.limpezagourmet.com.br/higienizacao" target="_blank" rel="noreferrer">Higienização de Estofados</a>
