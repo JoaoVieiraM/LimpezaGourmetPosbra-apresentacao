@@ -10,6 +10,11 @@ import img3 from './assets/img3.jpeg';
 import img4 from './assets/img4.jpeg';
 import img5 from './assets/img5.jpeg';
 import img6 from './assets/img6.png';
+import caixaLogo from './assets/Caixalogo.png';
+import dialogoLogo from './assets/DialogoLogo.png';
+import gpeLogo from './assets/GPELOGO.png';
+import vivazLogo from './assets/VivazLogo.webp';
+import plantaLogo from './assets/plantainclogo.svg';
 
 function App() {
   const { scrollYProgress } = useScroll();
@@ -106,7 +111,18 @@ function App() {
       <section className="marquee-wrapper">
         <div className="marquee">
           <div className="marquee-content">
-            Parceiros de Confiança: Planta.Inc • Gpe • Diálogo • Vivaz • Caixa Econômica Federal • Parceiros de Confiança: Planta.Inc • Gpe • Diálogo • Vivaz • Caixa Econômica Federal • 
+            <span className="marquee-title serif">Parceiros de Confiança:</span>
+            <img src={plantaLogo} alt="Planta.Inc" className="partner-logo" />
+            <img src={gpeLogo} alt="Gpe" className="partner-logo" />
+            <img src={dialogoLogo} alt="Dialogo" className="partner-logo" />
+            <img src={vivazLogo} alt="Vivaz" className="partner-logo" />
+            <img src={caixaLogo} alt="Caixa Econômica Federal" className="partner-logo" />
+            <span className="marquee-title serif" style={{marginLeft: '4rem'}}>Parceiros de Confiança:</span>
+            <img src={plantaLogo} alt="Planta.Inc" className="partner-logo" />
+            <img src={gpeLogo} alt="Gpe" className="partner-logo" />
+            <img src={dialogoLogo} alt="Dialogo" className="partner-logo" />
+            <img src={vivazLogo} alt="Vivaz" className="partner-logo" />
+            <img src={caixaLogo} alt="Caixa Econômica Federal" className="partner-logo" />
           </div>
         </div>
       </section>
@@ -162,8 +178,8 @@ function App() {
             style={{ backgroundImage: `url(${img2})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
            >
              <div className="service-card-content">
-               <h3>Técnica Internacional</h3>
-               <p>Padrões de excelência Bermuda & UK com química avançada e biodegradável para redefinir a pureza da entrega.</p>
+               <h3>Tecnologia internacional inspirada nos padrões do Reino Unido.</h3>
+               <p>Aplicamos química avançada e biodegradável para entregar máxima eficiência, segurança e excelência em cada detalhe.</p>
              </div>
            </motion.div>
            <motion.div 
