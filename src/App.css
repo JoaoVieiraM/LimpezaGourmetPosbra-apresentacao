@@ -204,6 +204,7 @@ html {
   white-space: nowrap;
   display: flex;
   align-items: center;
+  width: max-content;
   gap: 4rem;
   font-family: var(--font-sans);
   font-size: 1.1rem;
@@ -211,7 +212,10 @@ html {
   letter-spacing: 2px;
   text-transform: uppercase;
   color: var(--color-text-muted);
-  animation: scroll-left 25s linear infinite;
+  animation: scroll-left 15s linear infinite;
+}
+.marquee-content > * {
+  flex-shrink: 0;
 }
 .partner-logo {
   height: 40px;
@@ -228,6 +232,9 @@ html {
 .marquee-title {
   color: var(--color-gold);
   font-size: 1.2rem;
+}
+.spacer {
+  margin-left: 4rem;
 }
 @keyframes scroll-left {
   0% { transform: translateX(0); }
@@ -470,6 +477,11 @@ html {
     white-space: nowrap; 
   }
   
+  /* Acelerar carrossel (marquee) no celular e redimensionar proporções */
+  .marquee-content { animation-duration: 8s; gap: 2.5rem; }
+  .partner-logo { height: 35px; }
+  .spacer { margin-left: 2rem; }
+
   /* Tratamento dos textos gigigantes da About */
   .about-bg-text { font-size: 18vw; left: -10px; top: 20px; }
   .about-text h2 { font-size: 2.8rem; }
@@ -491,7 +503,11 @@ html {
   .logo-text { font-size: 1.1rem; }
   .navbar { padding: 1.2rem 1.5rem; }
   
-  .hero-title { font-size: 3.5rem; }
+  .marquee-content { gap: 1.5rem; }
+  .partner-logo { height: 30px; }
+  .spacer { margin-left: 1.5rem; }
+
+  .hero-title { font-size: 3rem; }
   .hero-image-wrapper { height: 40vh; }
   .about-image-wrapper { height: 320px; }
   .about-image { border-radius: 120px 120px 30px 30px; }

@@ -117,7 +117,7 @@ function App() {
             <img src={dialogoLogo} alt="Dialogo" className="partner-logo" />
             <img src={vivazLogo} alt="Vivaz" className="partner-logo" />
             <img src={caixaLogo} alt="Caixa Econômica Federal" className="partner-logo" />
-            <span className="marquee-title serif" style={{marginLeft: '4rem'}}>Parceiros de Confiança:</span>
+            <span className="marquee-title serif spacer">Parceiros de Confiança:</span>
             <img src={plantaLogo} alt="Planta.Inc" className="partner-logo" />
             <img src={gpeLogo} alt="Gpe" className="partner-logo" />
             <img src={dialogoLogo} alt="Dialogo" className="partner-logo" />
